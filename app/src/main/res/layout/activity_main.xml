@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layot"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/persona"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/personal_information"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/home_address"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/persona" />
+
+    <TextView
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="@string/first_name"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/home"
+        app:layout_constraintTop_toBottomOf="@id/home" />
+
+    <TextView
+        android:id="@+id/last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/last_name"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/first"
+        app:layout_constraintTop_toBottomOf="@id/home" />
+
+    <EditText
+        android:id="@+id/edFirst"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@id/first"
+        app:layout_constraintTop_toBottomOf="@id/first" />
+
+    <EditText
+        android:id="@+id/edLast"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:hint=""
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@id/edFirst"
+        app:layout_constraintTop_toBottomOf="@id/last" />
+
+    <TextView
+        android:id="@+id/defname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/default_name"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/edFirst"
+        app:layout_constraintTop_toBottomOf="@id/edFirst" />
+
+    <EditText
+        android:id="@+id/defaul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:hint=""
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@id/defname"
+        app:layout_constraintTop_toBottomOf="@id/defname" />
+
+    <TextView
+        android:id="@+id/zip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/zip"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/defaul"
+        app:layout_constraintTop_toBottomOf="@id/defaul" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:text="@string/city"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/zip"
+        app:layout_constraintTop_toTopOf="@id/zip" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="166dp"
+        android:text="@string/state"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/city"
+        app:layout_constraintTop_toTopOf="@id/city" />
+
+    <EditText
+        android:id="@+id/edZip"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@id/zip"
+        app:layout_constraintTop_toBottomOf="@id/zip" />
+
+    <EditText
+        android:id="@+id/edCity"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:hint=""
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@id/edZip"
+        app:layout_constraintTop_toBottomOf="@id/city" />
+
+    <EditText
+        android:id="@+id/edState"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:hint=""
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@id/edCity"
+        app:layout_constraintTop_toBottomOf="@id/state" />
+
+    <TextView
+        android:id="@+id/financ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/financial_information"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@id/edZip" />
+
+    <TextView
+        android:id="@+id/texStroka1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="@string/default_name"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/financ"
+        app:layout_constraintTop_toBottomOf="@id/financ" />
+
+    <EditText
+        android:id="@+id/stroka1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="18dp"
+        android:hint=""
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/financ" />
+
+    <TextView
+        android:id="@+id/texStroka2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/default_name"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/stroka1"
+        app:layout_constraintTop_toBottomOf="@id/stroka1" />
+
+    <TextView
+        android:id="@+id/texStroka3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/default_name"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/texStroka2"
+        app:layout_constraintTop_toBottomOf="@id/stroka1" />
+
+    <EditText
+        android:id="@+id/stroka2"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="18dp"
+        android:hint=""
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@id/texStroka1"
+        app:layout_constraintTop_toBottomOf="@id/texStroka1" />
+
+    <EditText
+        android:id="@+id/stroka3"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="64dp"
+        android:hint=""
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@id/texStroka1"
+        app:layout_constraintTop_toBottomOf="@id/texStroka1" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/bg_button"
+        android:text="@string/save_changes"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

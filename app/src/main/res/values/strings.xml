@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Home8</string>
+    <string name="personal_information">Personal information</string>
+    <string name="home_address">Home address</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">last name</string>
+    <string name="default_name">Default name</string>
+    <string name="financial_information">Financial information</string>
+    <string name="save_changes">Save changes</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="zip">Zip</string>
+</resources>
